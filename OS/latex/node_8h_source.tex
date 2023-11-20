@@ -1,0 +1,22 @@
+\hypertarget{node_8h_source}{}\doxysection{node.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NODE\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NODE\_H\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}}\{}
+\DoxyCodeLine{5     \textcolor{keywordtype}{int} no; \textcolor{comment}{//Numéro de processus}}
+\DoxyCodeLine{6     \textcolor{keywordtype}{float} at,bt,pc,tat,wt,rt,rd; \textcolor{comment}{//Arrival Time, Burst Time, Total Arrival Time, Wait Time, Response Time, Relative Delay}}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} *next; \textcolor{comment}{//Noeud suivant}}
+\DoxyCodeLine{8 \}\mbox{\hyperlink{structnode}{NODE}};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keywordtype}{void} insert(\mbox{\hyperlink{structnode}{NODE}} **p, \textcolor{keywordtype}{int} no,\textcolor{keywordtype}{float} at,\textcolor{keywordtype}{float} bt, \textcolor{keywordtype}{float} *pc, \textcolor{keywordtype}{float} *fr);}
+\DoxyCodeLine{11 \textcolor{keywordtype}{void} insert\_fifo(\mbox{\hyperlink{structnode}{NODE}} **p, \textcolor{keywordtype}{int} no,\textcolor{keywordtype}{float} at,\textcolor{keywordtype}{float} bt,\textcolor{keywordtype}{float} *pc,\textcolor{keywordtype}{float} *fr);}
+\DoxyCodeLine{12 \mbox{\hyperlink{structnode}{NODE}} * delete\_node(\mbox{\hyperlink{structnode}{NODE}} *p);}
+\DoxyCodeLine{13 \mbox{\hyperlink{structnode}{NODE}} * delete\_list(\mbox{\hyperlink{structnode}{NODE}} * list);}
+\DoxyCodeLine{14 \mbox{\hyperlink{structnode}{NODE}} * remove\_from\_list(\mbox{\hyperlink{structnode}{NODE}} * list, \textcolor{keywordtype}{int} supp);}
+\DoxyCodeLine{15 \mbox{\hyperlink{structnode}{NODE}} * remove\_from\_list\_for\_rr(\mbox{\hyperlink{structnode}{NODE}} * list, \textcolor{keywordtype}{int} supp);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NODE\_H\_INCLUDED}}
+
+\end{DoxyCode}

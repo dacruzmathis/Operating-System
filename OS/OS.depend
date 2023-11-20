@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1649084274 source:c:\users\w-book\demo\os\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fifo.h"
+	"sjf.h"
+	"rr.h"
+
+1649084181 c:\users\w-book\demo\os\node.h
+
+1649064451 c:\users\w-book\demo\os\fifo.h
+	"node.h"
+
+1649064408 c:\users\w-book\demo\os\sjf.h
+	"node.h"
+
+1649064367 c:\users\w-book\demo\os\rr.h
+	"node.h"
+
